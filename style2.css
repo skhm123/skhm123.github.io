@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+body{
+  background-image: url("images/Lawrencium.jpg");
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  /*position: relative;*/
+  font-family: 'Lora', serif;
+}
+img {
+    /*animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;*/
+    width: 18rem;
+    height: 22rem;
+    margin-top: 5%;
+    margin-left:28%;
+}
+
+/*a{
+  color:white;
+}*/
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 25%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /*background-color: #111; /* Black */*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 5%;
+  padding-left:2%; 
+  font-family: 'Lora', serif;
+  margin-top: 0%;
+}
+#nitt{
+  color:darkslateblue;
+}
+#interest{
+  color:deeppink;
+}
+#kahavat{
+  color:yellow;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidenav a {
+  padding: 16px 18px 16px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  font-family: 'Lora', serif;
+  font-size:30px;
+}
+img {
+    /*animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;*/
+    width: 14rem;
+    height: 22rem;
+    margin-top: 2%;
+    margin-left:28%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.nab:hover {
+  color: #f1f1f1;
+  font-size:35px;
+}
+.main {
+  margin-left: 30%; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+#second{
+  color:#f1f1f1;
+  font-size:35px;
+  font-family: 'Lora', serif;
+}
+#name{
+  margin-top: 2%;
+  margin-left: 23%;
+  color: #818181;
+  font-family: 'Lora', serif;
+  font-size: 48px;
+  text-decoration: underline;
+}
+p{
+  color: #818181;
+  font-family: 'Lora', serif;
+  margin: 0,auto;
+  font-size: 21px;}
+  /*body{
+    background: url("images/Lawrencium.jpg");
+  }*/ 
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.stars {
+  background:#000 url(images/stars.png) repeat top center;
+  z-index:0;
+}
+.twinkling{
+  background:transparent url(images/twinkling.png) repeat top center;
+  z-index:1;
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+.clouds{
+    background:transparent url(images/clouds.png) repeat top center;
+    z-index:3;
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
